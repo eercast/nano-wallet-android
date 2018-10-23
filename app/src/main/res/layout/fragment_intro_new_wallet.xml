@@ -7,7 +7,7 @@
         <!-- Click Listeners -->
         <variable
             name="handlers"
-            type="co.nano.nanowallet.ui.intro.IntroNewWalletFragment.ClickHandlers" />
+            type="com.eercast.cellcoin.ui.intro.IntroNewWalletFragment.ClickHandlers" />
         <!-- Data -->
         <variable
             name="seed"
