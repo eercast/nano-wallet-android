@@ -29,8 +29,8 @@
     <string name="intro_legal_deny">Não concordo</string>
     <string name="intro_legal_checkbox_eula_label">Acordo de Licença do Usuário Final</string>
     <string name="intro_legal_checkbox_pp_label">Política de Privacidade</string>
-    <string name="intro_legal_checkbox_eula_link">https://nanowalletcompany.com/android-eula</string>
-    <string name="intro_legal_checkbox_pp_link">https://nanowalletcompany.com/mobile-privacy-policy</string>
+    <string name="intro_legal_checkbox_eula_link">https://cellcoin.cc/terms</string>
+    <string name="intro_legal_checkbox_pp_link">https://cellcoin.com/privacy</string>
     <string name="intro_legal_alert_title">Aviso de Desconexão</string>
     <string name="intro_legal_alert_message">Não concordar resultará em desconexão do aplicativo.</string>
     <string name="intro_legal_alert_confirm_cta">Me desconecte</string>
@@ -38,7 +38,7 @@
 
     <!-- Analytics Opt-In -->
     <string name="analytics_optin_alert_title">Analytics Opt-In</string>
-    <string name="analytics_optin_alert_message">Nano (\'nós\') gostaria de coletar o ID do seu dispositivo, assim como as métricas de uso, erro e relatórios de quebras relacionado ao uso dessa aplicação móvel Nano Wallet (a \'Wallet\'), a fim de nos ajudar a entender como usuários estão utilizando a Carteira e onde os erros podem acontecer em sua Carteira, e usar esse dado para nos ajudar a manter, desenvolver e melhorar a Carteira, nossos produtos e serviços. \n\n Nenhum dado sobre seu nome, informação de contato, saldo, tokens Nano, Seed de Carteira ou chaves privadas nunca serão coletados através da Carteira. Você pode ver exatamente quais tipos de dados nós coletamos através da Carteira, vendo nossa Política de Privacidade.\n\nVocê concorda com a nossa coleta e uso destes dados para estes propósitos? (Seu consentimento não é um pré-requisito para usar a Carteira, e se você consentir, você terá o direito de negar seu consentimento a qualquer momento, como está descrito na Política de Privacidade.)</string>
+    <string name="analytics_optin_alert_message">CellCoin (\'nós\') gostaria de coletar o ID do seu dispositivo, assim como as métricas de uso, erro e relatórios de quebras relacionado ao uso dessa aplicação móvel CellCoin Wallet (a \'Wallet\'), a fim de nos ajudar a entender como usuários estão utilizando a Carteira e onde os erros podem acontecer em sua Carteira, e usar esse dado para nos ajudar a manter, desenvolver e melhorar a Carteira, nossos produtos e serviços. \n\n Nenhum dado sobre seu nome, informação de contato, saldo, tokens Nano, Seed de Carteira ou chaves privadas nunca serão coletados através da Carteira. Você pode ver exatamente quais tipos de dados nós coletamos através da Carteira, vendo nossa Política de Privacidade.\n\nVocê concorda com a nossa coleta e uso destes dados para estes propósitos? (Seu consentimento não é um pré-requisito para usar a Carteira, e se você consentir, você terá o direito de negar seu consentimento a qualquer momento, como está descrito na Política de Privacidade.)</string>
     <string name="analytics_optin_alert_confirm_cta">Eu concordo</string>
     <string name="analytics_optin_alert_cancel_cta">Eu Nâo Concordo</string>
 
@@ -52,7 +52,7 @@
     <!-- Home Screen -->
     <string name="home_send_cta">Enviar</string>
     <string name="home_receive_cta">Receber</string>
-    <string name="home_explore_url">https://www.nanode.co/block/%s</string>
+    <string name="home_explore_url">https://www.cellcoin.cc/block/%s</string>
     <string name="error_message">Ocorreu um problema para conectar. Por favor tente novamente.</string>
 
     <!-- Settings Screen -->
@@ -78,12 +78,12 @@
     <string name="receive_title">Receber</string>
     <string name="receive_instructions">Escaneie o QR code\nabaixo para receber NANO</string>
     <string name="receive_copy_cta">Copiar Endereço</string>
-    <string name="receive_address_label">Endereço Nano</string>
+    <string name="receive_address_label">Endereço CellCoin</string>
     <string name="receive_copy_message"><![CDATA[<font color=\"#ffffff\">Seu Endereço Nano foi copiado.<br>Compartilhe com um amigo para receber Nano!</font>]]></string>
     <string name="receive_copy_done">Pronto</string>
     <string name="receive_share_title">Compartilhar por…</string>
-    <string name="receive_card_label">$nano\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020nano.org</string>
-    <string name="receive_card_title">Nano</string>
+    <string name="receive_card_label">cec\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020nano.org</string>
+    <string name="receive_card_title">CellCoin</string>
     <string name="receive_qrcode_description">QR Code</string>
 
     <!-- Send Screen -->

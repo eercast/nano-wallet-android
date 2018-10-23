@@ -49,6 +49,7 @@ public class WebViewAgreementDialogFragment extends BaseDialogFragment {
                 binding.dialogAppBarProgress.setVisibility(ProgressBar.GONE);
                 binding.webviewAgreementSwiperefresh.setRefreshing(false);
             }
+            binding.webviewAgreementAcceptButton.setEnabled(true);
         }
     };
 

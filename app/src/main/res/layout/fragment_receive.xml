@@ -112,7 +112,7 @@
             app:layout_constraintBottom_toTopOf="@+id/receive_button_copy"
             app:layout_constraintEnd_toStartOf="@+id/receive_guideline_vert"
             app:layout_constraintStart_toStartOf="@+id/receive_guideline_vert"
-            tools:text="xrb_3gntuoguehi9d1mnhnar6ojx7jseeerwj5hesb4b4jga7oybbdbqyzap7ijg" />
+            tools:text="cec_3gntuoguehi9d1mnhnar6ojx7jseeerwj5hesb4b4jga7oybbdbqyzap7ijg" />
 
         <Button
             android:id="@+id/receive_button_copy"

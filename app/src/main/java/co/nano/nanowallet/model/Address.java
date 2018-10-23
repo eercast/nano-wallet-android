@@ -36,7 +36,7 @@ public class Address implements Serializable {
     }
 
     public boolean hasXrbAddressFormat() {
-        return value.contains("xrb_");
+        return value.contains("cec_");
     }
 
     public boolean hasNanoAddressFormat() {
@@ -69,7 +69,7 @@ public class Address implements Serializable {
     }
 
     public String getAddressWithoutPrefix() {
-        return value.replace("xrb_", "");
+        return value.replace("cec_", "");
     }
 
     public String getAmount() {
@@ -81,7 +81,7 @@ public class Address implements Serializable {
         if (parts.length != 2) {
             return false;
         }
-        if (!parts[0].equals("xrb") && !parts[0].equals("nano")) {
+        if (!parts[0].equals("cec") && !parts[0].equals("nano")) {
             return false;
         }
         if (parts[1].length() != 60) {
