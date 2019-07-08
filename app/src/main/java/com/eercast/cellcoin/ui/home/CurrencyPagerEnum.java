@@ -8,7 +8,7 @@ import com.eercast.cellcoin.R;
 
 public enum CurrencyPagerEnum {
     NANO(R.layout.view_home_amount_nano),
-    BTC(R.layout.view_home_amount_btc),
+//    BTC(R.layout.view_home_amount_btc),
     LOCAL(R.layout.view_home_amount_local_currency);
 
     private int mLayoutResId;

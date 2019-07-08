@@ -1,9 +1,11 @@
 package com.eercast.cellcoin.model;
 
 import android.content.Context;
+import android.util.Log;
 
 import com.hwangjr.rxbus.annotation.Subscribe;
 
+import java.io.IOException;
 import java.math.BigDecimal;
 import java.math.MathContext;
 import java.text.DecimalFormat;
@@ -31,7 +33,15 @@ import com.eercast.cellcoin.ui.common.ActivityWithComponent;
 import com.eercast.cellcoin.util.ExceptionHandler;
 import com.eercast.cellcoin.util.NumberUtil;
 import com.eercast.cellcoin.util.SharedPreferencesUtil;
+
+import org.json.JSONObject;
+
 import io.realm.Realm;
+import okhttp3.Call;
+import okhttp3.Callback;
+import okhttp3.OkHttpClient;
+import okhttp3.Request;
+import okhttp3.Response;
 
 
 /**
@@ -66,6 +76,29 @@ public class NanoWallet {
 
     public NanoWallet(Context context) {
         // init dependency injection
+
+        OkHttpClient client = new OkHttpClient();
+        Request request = new Request.Builder().url("https://cellcoin.cc/exchangerate").build();
+
+        client.newCall(request).enqueue(new Callback() {
+            @Override
+            public void onFailure(Call call, IOException e) {
+                localCurrencyPrice = new BigDecimal(0.00);
+
+            }
+
+            @Override
+            public void onResponse(Call call, Response response) throws IOException {
+                String jsonData = response.body().string();
+                try {
+                    JSONObject jObj = new JSONObject(jsonData);
+                    localCurrencyPrice = new BigDecimal(jObj.get("lastPrice").toString());
+                }catch(Exception ex){
+                    localCurrencyPrice = new BigDecimal(0.00);
+
+                }
+            }
+        });
         if (context instanceof ActivityWithComponent) {
             ((ActivityWithComponent) context).getActivityComponent().inject(this);
         }
@@ -429,7 +462,7 @@ public class NanoWallet {
 
     public void clear() {
         accountBalance = new BigDecimal("0.0");
-        localCurrencyPrice = null;
+//        localCurrencyPrice = null;
         btcPrice = null;
 
         representativeAddress = null;
@@ -488,9 +521,34 @@ public class NanoWallet {
             }
         }
         accountBalance = new BigDecimal(subscribeResponse.getBalance() != null ? subscribeResponse.getBalance() : "0.0");
-        localCurrencyPrice = new BigDecimal(subscribeResponse.getPrice());
+
         btcPrice = new BigDecimal(subscribeResponse.getBtc());
         RxBus.get().post(new WalletSubscribeUpdate());
+
+        OkHttpClient client = new OkHttpClient();
+        Request request = new Request.Builder().url("https://cellcoin.cc/exchangerate").build();
+
+        client.newCall(request).enqueue(new Callback() {
+                @Override
+                public void onFailure(Call call, IOException e) {
+                    localCurrencyPrice = new BigDecimal(0.00);
+
+                }
+
+                @Override
+                public void onResponse(Call call, Response response) throws IOException {
+                    String jsonData = response.body().string();
+                    try {
+                        JSONObject jObj = new JSONObject(jsonData);
+                        localCurrencyPrice = new BigDecimal(jObj.get("lastPrice").toString());
+                    }catch(Exception ex){
+                        localCurrencyPrice = new BigDecimal(0.00);
+
+                    }
+                }
+            });
+
+
     }
 
     /**
