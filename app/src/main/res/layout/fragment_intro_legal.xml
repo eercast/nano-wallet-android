@@ -6,7 +6,7 @@
         <!-- Click Listeners -->
         <variable
             name="handlers"
-            type="com.eercast.cellcoin.ui.intro.IntroLegalFragment.ClickHandlers" />
+            type="cc.cellcoin.cellcoin.ui.intro.IntroLegalFragment.ClickHandlers" />
         <!-- Data -->
         <variable
             name="seed"

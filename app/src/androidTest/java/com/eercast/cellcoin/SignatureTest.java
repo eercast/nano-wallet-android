@@ -1,4 +1,4 @@
-package com.eercast.cellcoin;
+package cc.cellcoin.cellcoin;
 
 import android.support.test.runner.AndroidJUnit4;
 import android.test.InstrumentationTestCase;

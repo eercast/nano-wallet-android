@@ -7,7 +7,7 @@
         <!-- Click Listeners -->
         <variable
             name="handlers"
-            type="com.eercast.cellcoin.ui.intro.IntroWelcomeFragment.ClickHandlers" />
+            type="cc.cellcoin.cellcoin.ui.intro.IntroWelcomeFragment.ClickHandlers" />
         <!-- Data -->
         <variable
             name="version"

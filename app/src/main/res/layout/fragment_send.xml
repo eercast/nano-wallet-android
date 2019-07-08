@@ -9,7 +9,7 @@
 
         <variable
             name="wallet"
-            type="com.eercast.cellcoin.model.NanoWallet" />
+            type="cc.cellcoin.cellcoin.model.NanoWallet" />
 
         <variable
             name="showAmount"
@@ -18,7 +18,7 @@
         <!-- Click Listeners -->
         <variable
             name="handlers"
-            type="com.eercast.cellcoin.ui.send.SendFragment.ClickHandlers" />
+            type="cc.cellcoin.cellcoin.ui.send.SendFragment.ClickHandlers" />
     </data>
 
     <android.support.constraint.ConstraintLayout

@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">CellCoin</string>
 
-    <string name="version_display">CellCoin - Eercast\nV%1$s (%2$d)</string>
+    <string name="version_display">CellCoin\nV%1$s (%2$d)</string>
 
     <!-- Intro Screens -->
     <string name="intro_welcome_title">Welcome to CellCoin</string>

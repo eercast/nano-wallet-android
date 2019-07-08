@@ -1,4 +1,4 @@
-package com.eercast.cellcoin.model;
+package cc.cellcoin.cellcoin.model;
 
 import android.support.test.runner.AndroidJUnit4;
 import android.test.InstrumentationTestCase;
@@ -10,8 +10,8 @@ import org.junit.runner.RunWith;
 
 import javax.inject.Inject;
 
-import com.eercast.cellcoin.di.activity.TestActivityComponent;
-import com.eercast.cellcoin.util.SharedPreferencesUtil;
+import cc.cellcoin.cellcoin.di.activity.TestActivityComponent;
+import cc.cellcoin.cellcoin.util.SharedPreferencesUtil;
 
 /**
  * Test the Nano Utility functions

@@ -1,7 +1,7 @@
-package com.eercast.cellcoin;
+package cc.cellcoin.cellcoin;
 
 import android.support.test.runner.AndroidJUnit4;
-import com.eercast.cellcoin.network.model.request.block.OpenBlock;
+import cc.cellcoin.cellcoin.network.model.request.block.OpenBlock;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;

@@ -7,11 +7,11 @@
         <!-- Data -->
         <variable
             name="wallet"
-            type="com.eercast.cellcoin.model.NanoWallet" />
+            type="cc.cellcoin.cellcoin.model.NanoWallet" />
 
         <variable
             name="localCurrency"
-            type="com.eercast.cellcoin.model.AvailableCurrency" />
+            type="cc.cellcoin.cellcoin.model.AvailableCurrency" />
     </data>
 
     <android.support.constraint.ConstraintLayout

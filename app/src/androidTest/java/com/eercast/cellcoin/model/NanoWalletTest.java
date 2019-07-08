@@ -1,4 +1,4 @@
-package com.eercast.cellcoin.model;
+package cc.cellcoin.cellcoin.model;
 
 import android.support.test.InstrumentationRegistry;
 import android.support.test.annotation.UiThreadTest;
@@ -15,11 +15,11 @@ import java.math.BigDecimal;
 
 import javax.inject.Inject;
 
-import com.eercast.cellcoin.NanoApplication;
-import com.eercast.cellcoin.di.activity.ActivityModule;
-import com.eercast.cellcoin.di.activity.DaggerTestActivityComponent;
-import com.eercast.cellcoin.di.activity.TestActivityComponent;
-import com.eercast.cellcoin.util.SharedPreferencesUtil;
+import cc.cellcoin.cellcoin.NanoApplication;
+import cc.cellcoin.cellcoin.di.activity.ActivityModule;
+import cc.cellcoin.cellcoin.di.activity.DaggerTestActivityComponent;
+import cc.cellcoin.cellcoin.di.activity.TestActivityComponent;
+import cc.cellcoin.cellcoin.util.SharedPreferencesUtil;
 
 /**
  * Test the Nano Utility functions

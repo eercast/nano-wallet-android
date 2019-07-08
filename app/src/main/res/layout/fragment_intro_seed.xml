@@ -7,7 +7,7 @@
         <!-- Click Listeners -->
         <variable
             name="handlers"
-            type="com.eercast.cellcoin.ui.intro.IntroSeedFragment.ClickHandlers" />
+            type="cc.cellcoin.cellcoin.ui.intro.IntroSeedFragment.ClickHandlers" />
         <!-- Data -->
         <variable
             name="steps"
